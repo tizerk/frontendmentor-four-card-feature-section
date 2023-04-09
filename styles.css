@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-section {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.title {
+  font-weight: 200;
+  font-size: 2.4rem;
+  color: var(--very-dark-blue);
+}
+
+.subtitle {
+  font-size: 2.41rem;
+  color: var(--very-dark-blue);
+  margin-bottom: 2rem;
+}
+
+.title-copy {
+  color: var(--grayish-blue);
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 2.5rem;
+  padding: 2.5rem;
+}
+
+.card-title {
+  color: var(--very-dark-blue);
+}
+
+.card-description {
+  font-size: 1.3rem;
+  color: var(--grayish-blue);
+}
+
+.card-icon {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.cyan {
+  border-top: 4px solid var(--cyan);
+}
+
+.red {
+  border-top: 4px solid var(--red);
+}
+
+.orange {
+  border-top: 4px solid var(--orange);
+}
+
+.blue {
+  border-top: 4px solid var(--blue);
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 63%, 61%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 3.24rem;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 3.25rem;
+    letter-spacing: 1.1px;
+  }
+  .title-copy {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 340px;
+    padding-bottom: 3rem;
+  }
+
+  .middle-cards {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .card-icon {
+    margin-top: 3.5rem;
+  }
+}
